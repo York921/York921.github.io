@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>York's Lab</title>
+    <link>blog url</link>
+    <description>Thinking, Blogging and Sharing</description>
+    <pubDate>Wed, 06 Aug 2014 09:02:00 +0800</pubDate>
+    <item>
+      <title>test post</title>
+      <link>blog url/apache/2014/08/06/test-post.html</link>
+      <description>&lt;h2 id=&quot;this-is-a-test-post&quot;&gt;This is a &lt;code&gt;test&lt;/code&gt; post.&lt;/h2&gt;
+
+</description>
+      <pubDate>Wed, 06 Aug 2014 09:02:00 +0800</pubDate>
+      <dc:date>2014-08-06T09:02:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>Mac OS X 10.9启用apache</title>
+      <link>blog url/apache/2014/08/06/mac-os-x-10.9%E5%90%AF%E7%94%A8apache.html</link>
+      <description>&lt;p&gt;Apache是世界上最流行的Web服务器软件，码农神器Mac OS自带了apache，位于&lt;code&gt;/etc/apache2&lt;/code&gt;，通过下面几步简单的配置便可投入使用。&lt;/p&gt;
+
+</description>
+      <pubDate>Wed, 06 Aug 2014 09:02:00 +0800</pubDate>
+      <dc:date>2014-08-06T09:02:00+08:00</dc:date>
+    </item>
+    <dc:date>2014-08-06T09:02:00+08:00</dc:date>
+  </channel>
+</rss>
