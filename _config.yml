@@ -2,11 +2,10 @@ name: York's Lab
 description: Thinking, Blogging and Sharing
 meta_description: "York's Lab"
 
-# markdown: redcarpet
-# extension: tables
-kramdown:
-  input: GFM
-#pygments: true
+markdown: redcarpet
+redcarpet:
+  extensions: [tables]
+
 highlighter: pygments
 logo: false
 paginate: 15
