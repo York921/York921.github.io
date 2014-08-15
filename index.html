@@ -5,7 +5,7 @@ cover: /assets/images/cover.jpg
 about: false
 ---
 
-<header class="site-head" {% if page.cover %} style="background-image: url({{ site.baseurl }}{{ page.cover }})"{% endif %}>
+<header class="site-head" id="site-head" {% if page.cover %} style="background-image: url({{ site.baseurl }}{{ page.cover }})"{% endif %}>
     <div class="vertical">
         <div class="site-head-content" class="inner">
             {% if page.logo %}
@@ -13,11 +13,22 @@ about: false
                     <img src="{{ page.logo }}" alt="Blog Logo" />
                 </a>
             {% endif %}
-            <h1 class="blog-title">{{ site.name }}</h1>
-            <h2 class="blog-description"> 
+            <h1 id = "blog-title" class="blog-title" id="blog-title">{{ site.name }}</h1>
+            <h2 class="blog-description" id="head-h2" >
                 {{ site.description }}. 
                 {% if page.about %} <a href='{{ page.about }}'> About me </a> {% endif %}
             </h2>
+             <script>
+                document.getElementById("head-h2").style.visibility="hidden";
+                $('#site-head').addClass('animated pulse');
+                $(document).ready(function(){
+                    $('#blog-title').addClass('animated fadeInUp');
+                    $('#blog-title').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                        document.getElementById("head-h2").style.visibility="visible";
+                        $('#head-h2').addClass('animated fadeInUp');
+                    });
+                });
+            </script>
         </div>
     </div>
 </header>
@@ -55,6 +66,5 @@ about: false
         <a class="older-posts" href="/page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
         {% endif %} 
     </nav>
-    
-
 </main>
+

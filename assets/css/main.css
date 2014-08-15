@@ -33,3 +33,8 @@ img.profile {
   	border-radius: 50px;
 }
 
+#blog-title {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+}
