@@ -5,30 +5,33 @@ cover: /assets/images/cover.jpg
 about: false
 ---
 
-<header class="site-head" id="site-head" {% if page.cover %} style="background-image: url({{ site.baseurl }}{{ page.cover }})"{% endif %}>
-    <div class="vertical">
-        <div class="site-head-content" class="inner">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-            <h1 id = "blog-title" class="blog-title" id="blog-title">{{ site.name }}</h1>
-            <h2 class="blog-description" id="head-h2" >
-                {{ site.description }}. 
-                {% if page.about %} <a href='{{ page.about }}'> About me </a> {% endif %}
-            </h2>
-             <script>
-                document.getElementById("head-h2").style.visibility="hidden";
-                $('#site-head').addClass('animated pulse');
-                $(document).ready(function(){
-                    $('#blog-title').addClass('animated fadeInUp');
-                    $('#blog-title').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                        document.getElementById("head-h2").style.visibility="visible";
-                        $('#head-h2').addClass('animated fadeInUp');
+<header class="site-head" id="site-head">
+     <div id='site-head-bg' class="site-head-bg" style="display:table;width:100%;height:100%; 
+     {% if page.cover %}background-image: url({{ site.baseurl }}{{ page.cover }}){% endif %}">
+        <div class="vertical">
+            <div class="site-head-content" class="inner">
+                {% if page.logo %}
+                    <a class="blog-logo" href="{{ site.baseurl }}">
+                        <img src="{{ page.logo }}" alt="Blog Logo" />
+                    </a>
+                {% endif %}
+                <h1 id = "blog-title" class="blog-title" id="blog-title">{{ site.name }}</h1>
+                <h2 class="blog-description" id="head-h2" >
+                    {{ site.description }}.
+                    {% if page.about %} <a href='{{ page.about }}'> About me </a> {% endif %}
+                </h2>
+                 <script>
+                    document.getElementById("head-h2").style.visibility="hidden";
+                    $(document).ready(function(){
+                        $('#site-head-bg').addClass('animated pulse');
+                        $('#blog-title').addClass('animated fadeInUp');
+                        $('#blog-title').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                            document.getElementById("head-h2").style.visibility="visible";
+                            $('#head-h2').addClass('animated fadeInUp');
+                        });
                     });
-                });
-            </script>
+                </script>
+            </div>
         </div>
     </div>
 </header>

@@ -38,3 +38,9 @@ img.profile {
   -webkit-animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
 }
+
+#site-head-bg {
+  -webkit-animation-duration: 7s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+}
