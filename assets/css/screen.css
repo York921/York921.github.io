@@ -796,8 +796,8 @@ margin on the iframe, cause it breaks stuff. */
         -moz-box-sizing: border-box;
         box-sizing: border-box; 
         height: auto;
-        min-height: 240px;
-        padding: 15% 0;
+        /*min-height: 240px;*/
+        /*padding: 15% 0;*/
     }
 
     .blog-title {
@@ -868,9 +868,9 @@ margin on the iframe, cause it breaks stuff. */
         line-height: 1.6em;
     }
 
-    .site-head {
+    /*.site-head {
         padding: 10% 0;
-    }
+    }*/
 
     .blog-title {
         font-size: 3rem;
