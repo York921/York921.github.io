@@ -35,12 +35,14 @@ img.profile {
 
 #blog-title {
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 0s;
+  -ms-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
 }
 
 #site-head-bg {
   -webkit-animation-duration: 7s;
-  -webkit-animation-delay: 0s;
+   -ms-animation-duration: 7s;
+   animation-duration: 7s;
   -webkit-animation-iteration-count: 1;
 }
